@@ -1,10 +1,12 @@
 ﻿
+Console.Clear();
 Random random = new Random();
 
 int ArrRandomSize()
 {
-    return random.Next(0, 4);
+    return random.Next(3, 6);
 }
+
 void ArrRandomElements(string[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
@@ -21,6 +23,13 @@ void ArrPrint(string[] arr)
     }
 }
 
-string[] arr = new string[ArrRandomSize()];
+string EndingString(int size)
+{
+    if(size <= 4) return "строки";
+    else return "строк";
+}
+
+int size = ArrRandomSize();
+string[] arr = new string[size];
+System.Console.WriteLine($"Введите {size} {EndingString(size)} через Enter");
 ArrRandomElements(arr);
-ArrPrint(arr);
