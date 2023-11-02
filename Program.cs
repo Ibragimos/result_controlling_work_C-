@@ -15,14 +15,6 @@ void ArrRandomElements(string[] arr)
     }
 }
 
-void ArrPrint(string[] arr)
-{
-    for (int i = 0; i < arr.Length; i++)
-    {
-        System.Console.WriteLine(arr[i]);
-    }
-}
-
 string EndingString(int size)
 {
     if(size <= 4) return "строки";
