@@ -21,7 +21,6 @@ void ArrPrint(string[] arr)
     }
 }
 
-
 string[] arr = new string[ArrRandomSize()];
 ArrRandomElements(arr);
 ArrPrint(arr);
