@@ -5,7 +5,7 @@ int ArrRandomSize()
 {
     return random.Next(0, 4);
 }
-void ArrElements(string[] arr)
+void ArrRandomElements(string[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
@@ -13,6 +13,13 @@ void ArrElements(string[] arr)
     }
 }
 
+void ArrPrint(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        System.Console.WriteLine(arr[i]);
+    }
+}
 
 
 string[] arr = new string[ArrRandomSize()];
