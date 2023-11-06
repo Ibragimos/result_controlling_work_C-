@@ -28,7 +28,6 @@ void ReducedArray(string[] arr)
     System.Console.Write($"Вывод {sizeNewArr} строк: ");
     for (int i = 0; i < newArr.Length; i++)
     {
-        
         string temp = arr[i];
         arr[i] = newArr[i];
         newArr[i] = temp;
